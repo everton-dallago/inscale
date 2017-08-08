@@ -1,0 +1,15 @@
+php:
+  build: .
+  dockerfile: Dockerfile
+  container_name: php
+  ports:
+    - "80:80"
+  volumes:
+    - "./etc/nginx/nginx.conf:/etc/nginx/nginx.conf"
+    - "./etc/php/7.0/:/etc/php/7.0/"
+    - "./html:/usr/share/nginx/html"
+    - "./var/log/:/var/log/nginx/"
+  stdin_open: true
+  tty: true
+  cap_add:
+    - ALL
