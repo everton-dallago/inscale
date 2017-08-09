@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <title>Domínio</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>Domínio</title>
+</head>
 
-    <body>
-        <div class="container">
-            <div class="row">
-                <form action="dominio.php" method="post">
-                    <h2>Domínio</h2>
+<body>
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="painel_usuario.html">Inscale</a>
+                </div>
 
-                    <div class="form-group" >
-                        <input type="text" class="form-control" id="dominio" name="valor" placeholder="Domínio" required>
-                    </div>
-
-                    <input type="submit" class="btn btn-primary pull-right" value="Próximo">
-                </form>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Novo Domínio<span class="sr-only">(current)</span></a></li>
+                        <li><a href="registros_dns.html">Meus Registros DNS</a></li>
+                        <li><a href="nameservers.html">Alterar Nameservers</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </body>
+        </nav>
+    </div>
+
+    <div class="row">
+        <form action="php/dominio.php" method="post">
+            <h2>Domínio</h2>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="dominio" name="valor" placeholder="Domínio" required>
+            </div>
+
+            <input type="submit" class="btn btn-primary pull-right" value="Próximo">
+        </form>
+    </div>
+</div>
+</body>
 </html>

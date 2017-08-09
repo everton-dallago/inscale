@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>Conta</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="painel_usuario.html">Inscale</a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Configurações de Conta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="row">
+        <h3>Configurações de conta</h3>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="conta.html">Conta</a></li>
+            <li><a href="#">Pagamento</a></li>
+            <li><a href="#">Plano</a></li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <h3>Meu Perfil</h3>
+        <div class="panel panel-default clearfix">
+            <form class="form-group">
+                <div class="col-lg-6">
+                    <label>Nome</label>
+                    <input class="form-control" id="nome" type="text" required>
+
+                    <label>Telefone</label>
+                    <input class="form-control" id="tefefone" type="text" required>
+
+                    <label>Endereço</label>
+                    <input class="form-control" id="endereco" type="text" required>
+                </div>
+
+                <div class="col-lg-6">
+                    <label>Estado</label> <br>
+
+                    <select class="btn dropdown-toggle">
+                        <option>RS</option>
+                        <option>SC</option>
+                        <option>PR</option>
+                        <option>SP</option>
+                        <option>MG</option>
+                    </select>
+
+                    <br><br>
+
+                    <label>CEP</label>
+                    <input class="form-control" id="cep" type="text">
+
+                    <br>
+
+                    <button type="submit" class="btn btn-success pull-right">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="panel panel-default clearfix">
+            <h3>Endereço de Email</h3>
+
+            <p>Endereço de Email atual: user@email.com</p>
+
+            <button class="btn btn-primary pull-right" type="button">Mudar Email</button>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="panel panel-default clearfix">
+            <h3>Senha</h3>
+
+            <p>Alterar senha atual</p>
+
+            <button class="btn btn-primary pull-right" type="button">Mudar Senha</button>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
